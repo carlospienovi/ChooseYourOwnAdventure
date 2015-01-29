@@ -4,5 +4,19 @@
     <string name="app_name">ChooseYourOwnAdventure</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="button_start">Start travelling</string>
+    <string name="title_activity_second">AlleyActivity</string>
+    <string name="title_activity_room">RoomActivity</string>
+    <string name="text_alley">You have ventured down the dark alley, where would you like to go next?</string>
+    <string name="button_go_left">Go left</string>
+    <string name="button_continue">Continue</string>
+    <string name="button_go_right">Go right</string>
+    <string name="title_activity_winning">WinningActivity</string>
+    <string name="text_win">You won!</string>
+    <string name="title_activity_losing">LosingActivity</string>
+    <string name="text_lost">You lost!</string>
+    <string name="text_room">You have entered a room with two doors</string>
+    <string name="button_enter_door_1">Enter door 1</string>
+    <string name="button_enter_door_2">Enter door 2</string>
 
 </resources>
