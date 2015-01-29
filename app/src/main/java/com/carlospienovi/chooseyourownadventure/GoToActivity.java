@@ -1,9 +1,9 @@
 package com.carlospienovi.chooseyourownadventure;
 
-import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.content.Context;
 import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 
 import java.util.Random;
 
@@ -16,7 +16,7 @@ public class GoToActivity {
     private static final int ROOM_FRAGMENT = 1;
 
     public static void goToAlleyOrRoom(Context context) {
-        Fragment nextActivity;
+        CustomFragment nextActivity;
         if (randInt(ALLEY_FRAGMENT, ROOM_FRAGMENT) == ALLEY_FRAGMENT) {
             nextActivity = new AlleyFragment();
         } else {
@@ -45,10 +45,10 @@ public class GoToActivity {
         }
     }
 
-    private static void replaceFragment(Context context, Fragment f) {
+    private static void replaceFragment(Context context, CustomFragment f) {
         FragmentTransaction ft = ((ActionBarActivity) context).getFragmentManager().beginTransaction();
-        ft.addToBackStack(null);
-        ft.replace(R.id.container, f).commit();
+        ft.addToBackStack(f.getTagName());
+        ft.replace(R.id.container, f, f.getTagName()).commit();
     }
 
     private static int randInt(int min, int max) {
