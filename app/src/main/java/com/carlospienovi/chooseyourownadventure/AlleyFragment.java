@@ -1,5 +1,6 @@
 package com.carlospienovi.chooseyourownadventure;
 
+import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,7 +8,9 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 
-public class AlleyFragment extends CustomFragment {
+public class AlleyFragment extends Fragment {
+
+    public static final String TAG = AlleyFragment.class.getSimpleName();
 
     Button mGoLeftButton, mContinueButton, mGoRightButton;
 

@@ -1,5 +1,6 @@
 package com.carlospienovi.chooseyourownadventure;
 
+import android.app.Fragment;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.LayoutInflater;
@@ -48,7 +49,7 @@ public class MainActivity extends ActionBarActivity {
     /**
      * A placeholder fragment containing a simple view.
      */
-    public static class PlaceholderFragment extends CustomFragment {
+    public static class PlaceholderFragment extends Fragment {
 
         Button mStartTravellingButton;
 
